@@ -20,13 +20,11 @@
 let fullName = "Sam Harries";
 function textName(fullName) {
   let arr = fullName.split(" ");
-  console.log(arr);
 
-  let result = "";
+  let result = [];
 
   for (const iterator of arr) {
-    result += iterator[0].toUpperCase() + ".";
-    // result.replace(arr.length - 1);
+    result.push(iterator[0].toUpperCase());
   }
 
   return result.join(".");
